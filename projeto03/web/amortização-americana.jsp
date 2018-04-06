@@ -15,6 +15,7 @@
         <title>Amortização Americana</title>
     </head>
     <body>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
         <div>Amortização Americana</div>
         <form>
             Digite Valor,Nº de Meses,Juros:<br/>
