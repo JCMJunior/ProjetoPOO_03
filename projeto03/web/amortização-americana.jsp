@@ -121,5 +121,6 @@
                         out.println(ex);
                     }
         }%>
+    <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
