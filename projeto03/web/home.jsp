@@ -8,5 +8,6 @@
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <h1>Hello World!</h1>
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
