@@ -17,9 +17,9 @@
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <div>Amortização Constante</div>
         <form>
-            <p>Valor emprestimo:</p>
+            <p>Valor do empréstimo:</p>
                 <input type="number" required="true" name="emp"/><br/>
-                <p>Quantidade de meses:</p>
+                <p>Período em meses:</p>
                 <input type="number" required="true" name="meses"/><br/>
                 <p>Juros (%):</p>
                 <input type="number" required="true" name="juros"/><br/>
