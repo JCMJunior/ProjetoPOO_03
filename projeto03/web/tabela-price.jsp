@@ -127,5 +127,6 @@
             }%>
         
         </table>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
     </body>
 </html>
