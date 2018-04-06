@@ -43,11 +43,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <%= DecimalFormat round = new DecimalFormat("###,##0.00") %>
+                            <% DecimalFormat round = new DecimalFormat("###,##0.00"); %>
                             <%
                                 for(int i=1; i<=meses; i++) {
                                     juros=(meses-i+1)*(txjuros/100)*amortizacao;
-                                    prest = amortizacao + juros;
+                                    prestacao = amortizacao + juros;
                                     saldod = saldod - amortizacao;
                             %>
                             <th><%= i %></th>
