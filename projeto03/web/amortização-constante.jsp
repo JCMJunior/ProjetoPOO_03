@@ -14,7 +14,7 @@
         <title>Amortização Constante</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <%@include file="WEB-INF/jspf/menu.jspf" %></br>
         <div>Amortização Constante</div>
         <form>
                 <p>Valor do empréstimo:</p>
@@ -25,6 +25,7 @@
                 <input type="number" required="true" name="juros"/><br/>
                 <input type="submit" value="Calcular"/>
         </form>
+            <hr/>
             <br/>
             <% try { %>
             <%  int meses = Integer.parseInt(request.getParameter("meses"));
