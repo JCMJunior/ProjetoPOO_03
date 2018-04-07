@@ -90,7 +90,7 @@
                 <div class="desc">
                   <h5>Patrick Donnarumma</h5>
                   <p>Discente na Fatec PG 4º Ciclo
-                      <a href='https://www.facebook.com/Calculadora-de-Juros-162706771112325/' >Facebbok</a>
+                      <a href='https://www.facebook.com/PatrickDonnarumma/' >Facebook</a>
                   </p>
                 </div>
               </div>
