@@ -7,29 +7,61 @@
     PS: Arrumadu...
 --%>
 
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
         <title>Amortização Americana</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Clean responsive bootstrap website template">
+        <meta name="author" content="">
+  <!-- styles -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="assets/css/docs.css" rel="stylesheet">
+        <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        <link href="assets/css/flexslider.css" rel="stylesheet">
+        <link href="assets/css/refineslide.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" rel="stylesheet">
+
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/color/default.css" rel="stylesheet">
     </head>
     <body>
+        <section main="content">
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        </br>
-        <div>Amortização Americana</div>
+        <br><br><br>
+        <br><br><br>
+        <center>
+        <div width="responsive" height="900px">
+    <div class="containner" >
+        <div><h2>Amortização Americana</h2></div><br>
         <form>
                 <p>Valor do empréstimo:</p>
-                <input type="number" required="true" name="valor"/><br/>
+                <td>
+                <label>Digite o valor = <input  type="number"  name="valor"/><br/>
+                </td>
                 <p>Período em meses:</p>
-                <input type="number" required="true" name="meses"/><br/>
+                <td>
+                <label>Qtde de meses = <input type="number"  name="meses"/><br/>
+                </td>
                 <p>Juros (%):</p>
-                <input type="number" required="true" name="juros"/><br/>
+                <td>
+                <label>Taxa de juros = <input type="number"  name="juros"/><br/>
+                </td>
+                
                 <input type="submit" value="Calcular"/>
+                
         </form>
-        <hr/>
-        <br/>
+        
+         <a href="amortização-americana.jsp"><input type="submit" value="Limpar"></a>
+       
+       
+             
         
         <%try{%>
         <%double n= Double.parseDouble(request.getParameter("valor"));%>
@@ -45,6 +77,7 @@
 
 
         <table border ="1">
+            
             <tr><th>Mês</th><th>Saldo Devedor</th><th>Amortização</th><th>Juros</th><th>Prestação</th></tr>
             <% DecimalFormat round = new DecimalFormat("###,##0.00"); %>
             <%for(int i=0; i <=t; i++) {%>
@@ -112,7 +145,9 @@
                 <td><%= round.format(total) %></td>
                 </tr>
 
-        </table>
+        
+                
+               
         
         <%}
 
@@ -121,6 +156,33 @@
                         out.println(ex);
                     }
         }%>
-    <%@include file="WEB-INF/jspf/rodape.jspf" %>
+        
+        </table>
+        
+            </div>  
+          </div>
+       </center>     
+        </section><br>
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
+  <script src="assets/js/portfolio/jquery.quicksand.js"></script>
+  <script src="assets/js/portfolio/setting.js"></script>
+  <script src="assets/js/hover/jquery-hover-effect.js"></script>
+  <script src="assets/js/jquery.flexslider.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/cbpAnimatedHeader.min.js"></script>
+  <script src="assets/js/jquery.refineslide.js"></script>
+  <script src="assets/js/jquery.ui.totop.js"></script>
+  <!-- Template Custom Javascript File -->
+  <script src="assets/js/custom.js"></script>
+       
+   
+       
     </body>
+     
 </html>

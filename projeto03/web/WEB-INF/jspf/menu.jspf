@@ -1,4 +1,53 @@
-<a href="home.jsp">Home</a>
-| <a href="amortização-americana.jsp">Amortização Americana</a>
-| <a href="amortização-constante.jsp">Amortização Constante</a>
-| <a href="tabela-price.jsp">Tabela Price</a>
+<script assets='js/jquery.min.js'></script>
+<script assets='js/bootstrap.min.js'></script>
+<script assets='js/scripts.js'></script>
+<link assets='src/css/bootstrap.css' rel='stylesheet'>
+
+<!-- Navbar
+    ================================================== -->
+<div class="cbp-af-header">
+    <div class=" cbp-af-inner">
+        <div class="container">
+          <div class="row">
+
+            <div class="span4">
+              <!-- logo -->
+              <div class="logo">
+                <h1> <a href="home.jsp">CALCULADORA</a></h1>
+                <!-- <img src="assets/img/logo.png" alt="" /> -->
+              </div>
+              <!-- end logo -->
+            </div>
+
+            <div class="span8">
+              <!-- top menu -->
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <nav>
+                    <ul class="nav topnav">
+                      <li class="dropdown active">
+                         <a href="home.jsp">HOME</a>
+                      </li>
+                      
+                      <li class="dropdown">
+                       <a href="amortização-constante.jsp">AMORT. CONSTANTE</a>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="amortização-americana.jsp">AMORT. AMERICANA</a>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="tabela-price.jsp">TABELA PRICE</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- end menu -->
+            </div>
+          </div>
+        </div>
+    </div>
+ </div>
+        
